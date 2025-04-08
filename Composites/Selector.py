@@ -40,5 +40,5 @@ class Selector(Behavior):
             
         if not self.finished:
             return Status.RUNNING
-        return Status.RUNNING
+        return Status.FAILURE
     
