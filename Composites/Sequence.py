@@ -29,7 +29,8 @@ class Sequence(Behavior):
         
         nextAction = self.actions.get()
         self.prevActions.append(nextAction)
-        memory
+        memory.push(nextAction)
+        return Status.RUNNING
     
     def CheckRequirement(self):
         if self.finished:
