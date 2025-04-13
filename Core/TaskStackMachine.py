@@ -1,5 +1,5 @@
 from enum import Enum
-from Stack import Stack
+from .Stack import Stack
 
 class Status(Enum):
     RUNNING = 1

@@ -1,13 +1,13 @@
 from abc import ABC, abstractmethod
-from Core.TaskStackMachine import Status
-from Core.Stack import Stack
+from ..Core.TaskStackMachine import Status
+from ..Core.Stack import Stack
 
 class Behavior:
     def __init__(self, blackboard):
         # redundant, but there may be cases where we need to internally
         # store blackboard reference
         self.blackboard = blackboard 
-
+        
     @abstractmethod
     def Step(self, memory, blackboard, message) -> Status:
         pass
