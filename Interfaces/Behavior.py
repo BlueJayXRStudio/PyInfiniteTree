@@ -28,6 +28,6 @@ class Behavior:
                 break
 
         while tempStack.count() > 0:
-            memory.push(tempStack.Pop())
+            memory.push(tempStack.pop())
 
         return result
